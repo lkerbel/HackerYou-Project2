@@ -1,0 +1,106 @@
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Princess Pirate Wedding</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Bentham' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+    <!-- ///// LANDING PAGE /////-->
+
+    <header>
+    	<ul class="nav">
+    		<li><a title="wedding" href="#">WEDDING</a></li>
+			<li><a title="address book" href="#">ADDRESS BOOK</a></li>
+			<li><a title="gifts" href="#">GIFTS</a></li>
+			<li><a title="events" href="#">EVENTS</a></li>
+    	</ul>
+    </header>
+
+	<div class="landing">
+		<img class="birds" src="images/lovebirds.svg">
+	
+		<h1>buttercup & westley</h1>
+
+		<div class="finally"><h2>are finally tying the knot</h2></div>
+
+		<div class="scrollDown">address book </div>
+		
+		<div class="arrow">&#8595;</div>
+	</div><!--landing-->
+
+
+
+<!-- ///// ADDRESS BOOK /////-->
+
+	<div class="addressBook">
+		<h2>address book</h2>
+		<div class="line"> </div>
+		<h3>Where should we send your invitation?</h3>
+
+		<form action="guestlist.php" class="guestlist clearfix">
+
+	
+			<div class="row1 clearfix">
+				<select name="salutation" class="drop">
+					<option value="mrs">Mrs.</option>
+					<option value="mr">Mr.</option>
+					<option value="miss">Miss</option>
+					<option value="ms">Ms.</option>
+					<option value="HRH">H.R.H</option>
+					<option value="lady">Lady</option>
+					<option value="lord">Lord</option>
+				</select>
+
+				<input type="text" name="firstName" placeholder="First Name">
+				<input type="text" name="lastName" placeholder="Last Name">
+			</div><!--row1-->
+
+			<div class="row2 clearix">
+				<input type="text" name="address1" placeholder="Address">
+				<input type="text" name="address2" placeholder="Address">
+			</div><!--row2-->
+
+			<div class="row3 clearfix">
+				<input type="text" class="guestList" name="city" placeholder="City">
+				<input type="text" class="guestList" name="province" placeholder="Province / State">
+				<input type="text" class="guestList" name="postCode" placeholder="Post Code">
+			</div><!--row3-->
+
+			<div class="email clearfix">
+				<input type="email" name="emailAddress" placeholder="Email Address">
+			</div><!--row4-->
+
+
+			<div class="row5 clearfix">
+				<input type="radio" name="rsvp" value="Date saved!" checked="true">Date saved!
+				<input type="radio" name="rsvp" value="Already have plans">Already have plans
+				<input type="radio" name="rsvp" value="I'm Prince Humperdink">I'm Prince Humperdink
+			</div><!--row5-->
+
+			<div class="row6">
+				<input type="submit" value="invite me">
+			</div><!--row6-->
+
+	</div><!--addressBook-->
+
+</form>
+<!-- ///// GIFTS /////-->
+
+	<div class="gifts">
+		<h2>gifts</h2>
+
+		<p>In place of gifts, Buttercup & Westley have asked guests to consider making a donation to their favourite cause: <a href="http://www.buzzfeed.com/nathanwpyle/as-yoooouuuuuu-wiiiiiisssssshhhh#.vi4J7xx0om">the Fireswamp Conservation Project</a></p>
+	</div>
+
+
+<!-- ///// FOOTER /////-->
+	<footer>
+		
+	</footer>
+	
+    </body>
+    </html>
