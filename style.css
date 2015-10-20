@@ -113,6 +113,41 @@
 		letter-spacing: 2px;
 		padding: 0 60px;
 	}
+
+  ul.mobile {
+    list-style: none;
+  }
+
+  ul.mobile li {
+    display:inline;
+  }
+
+  ul.dropdown-menu li {
+    display:none;
+  }
+
+  /*ul.mobile li:target ul.dropdown {
+    display:block;
+  }*/
+
+  ul.mobile li ul.dropdown li {
+    display: list-item;
+  }
+
+  @media (min-width: 940px) and (max-width: 1070px) {
+    ul.nav {text-align: center; padding:0; }
+    ul.nav li {padding: 0 40px;}
+  }
+
+  @media (min-width: 940px ) {
+    ul.mobile {display:none;}
+  }
+
+  @media (max-width: 940px) {
+    ul.nav {display: none;}
+    ul.mobile {display:block;}
+  }
+
    	/* ---------->>> LANDING <<<-----------*/
 
    	div.landing {
@@ -129,10 +164,10 @@
    	}
 
    	.arrow {
-   		font-size: 7rem;
-   		color: #fff;
-   		text-align: center;
-   		padding-bottom: 60px;
+   		width: 3.8%;
+      display: block;
+      margin:auto;
+   		padding: 20px 0 60px 0;
    	}
 
 
@@ -144,6 +179,10 @@
    		width: 90%;
    		margin: 50px auto;
    	}
+
+    @media (min-width: 1280px) {
+      div.addressBook {max-width: 1280px;}
+    }
 
    	.line {
    		width: 8%;
@@ -218,6 +257,7 @@ div.gifts {
   margin: auto;
 }
 
+
 .line {
       width: 8%;
       border-bottom: 1px solid black;
@@ -233,6 +273,11 @@ font-weight: 300;
 line-height: 1.8;
 padding:50px 0 180px 0;
 }
+
+@media (min-width: 1280px) {
+      div.gifts p {max-width: 1010px;}
+    }
+
 
 div.gifts h2 {
   padding-top:80px;
