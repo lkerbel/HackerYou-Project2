@@ -10,8 +10,6 @@
     </head>
     <body>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
 
 
     <!-- ///// LANDING PAGE /////-->
@@ -25,9 +23,8 @@
     	</ul>
 
     	<ul class="mobile">
-	    	<li class="dropdown"> 
-	    		<a href="#" data-toggle="dropdown">menu<i class="icon-arrow"></i></a>
-	    			<ul class="dropdown-menu">
+	    	<li> menu
+	    			<ul>
 		    			<li><a title="wedding" href="#">WEDDING</a></li>
 						<li><a title="address book" href="#">ADDRESS BOOK</a></li>
 						<li><a title="gifts" href="#">GIFTS</a></li>
@@ -36,39 +33,7 @@
 			</li>
 		</ul>
 
-		<script>
-		$(function() {
-  var dropdown = document.querySelectorAll('.dropdown');
-  var dropdownArray = Array.prototype.slice.call(dropdown,0);
-dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
-			menu = el.querySelector('.dropdown-menu'),
-			arrow = button.querySelector('i.icon-arrow');
-
-	button.onclick = function(event) {
-		if(!menu.hasClass('show')) {
-			menu.classList.add('show');
-			menu.classList.remove('hide');
-			arrow.classList.add('open');
-			arrow.classList.remove('close');
-			event.preventDefault();
-		}
-		else {
-			menu.classList.remove('show');
-			menu.classList.add('hide');
-			arrow.classList.remove('open');
-			arrow.classList.add('close');
-			event.preventDefault();
-		}
-	};
-})
-
-Element.prototype.hasClass = function(className) {
-    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
-};
-
-}); 
-		</script>
+		
 
     </header>
 
