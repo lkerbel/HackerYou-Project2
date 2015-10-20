@@ -114,25 +114,50 @@
 		padding: 0 60px;
 	}
 
-  ul.mobile {
+/****** Mobile Nav ******/
+ 
+  ul.mobile, ul.mobile li ul {
     list-style: none;
   }
 
+
+
+ul.mobile {
+  margin: 30px auto 20px auto;
+  text-align: center;
+  padding:0;
+}
+
+ul.mobile li ul {
+  padding:0;
+}
+
   ul.mobile li {
-    display:inline;
-  }
-
-  ul.dropdown-menu li {
-    display:none;
-  }
-
-  /*ul.mobile li:target ul.dropdown {
+    width: 100%;
     display:block;
-  }*/
-
-  ul.mobile li ul.dropdown li {
-    display: list-item;
+    text-transform: uppercase;
+    font-size: 2rem;
   }
+
+
+  ul.mobile li ul li{
+    text-transform: none;
+    width: 100%;
+    font-size: 1rem;
+/*    display:none;
+*/    text-align: center;
+  }
+
+
+  ul.mobile li:hover ul li{
+    width: 100%;
+   display:block;
+  }
+
+//==========================================
+// Media Queries
+//==========================================
+
 
   @media (min-width: 940px) and (max-width: 1070px) {
     ul.nav {text-align: center; padding:0; }
