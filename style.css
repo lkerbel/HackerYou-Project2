@@ -48,8 +48,15 @@
 
    	h1 {
    		font: lighter 7.2rem 'Bentham', serif;
-   		margin: 0;
+   		margin: 0 5%;
    	}
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 5.2rem;
+     /*   margin: 0 5%;*/
+      }
+    }
 
    	div.landing h1 {
    		color: #fff;
@@ -133,42 +140,43 @@ ul.mobile li ul {
 }
 
   ul.mobile li {
-    width: 100%;
-    display:block;
     text-transform: uppercase;
     font-size: 2rem;
   }
 
 
   ul.mobile li ul li{
-    text-transform: none;
-    width: 100%;
+    margin: auto;
     font-size: 1rem;
-/*    display:none;
-*/    text-align: center;
+    padding: 15px 0;
+    display:none;
   }
+ 
+ ul.mobile li ul li a {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 10px 0;
+
+ }
 
 
-  ul.mobile li:hover ul li{
+  ul.mobile li:hover ul li {
     width: 100%;
    display:block;
   }
 
-//==========================================
-// Media Queries
-//==========================================
 
+/* Media Queries */
 
   @media (min-width: 940px) and (max-width: 1070px) {
     ul.nav {text-align: center; padding:0; }
     ul.nav li {padding: 0 40px;}
   }
 
-  @media (min-width: 940px ) {
+  @media (min-width: 1069px ) {
     ul.mobile {display:none;}
   }
 
-  @media (max-width: 940px) {
+  @media (max-width: 1069px) {
     ul.nav {display: none;}
     ul.mobile {display:block;}
   }
@@ -188,13 +196,47 @@ ul.mobile li ul {
    		padding: 100px 0 0 0;
    	}
 
-   	.arrow {
+
+
+
+   	img.arrow {
    		width: 3.8%;
       display: block;
       margin:auto;
    		padding: 20px 0 60px 0;
    	}
 
+/*Media Queries */
+
+@media (max-width: 768px) {
+  img.birds {
+    width:40%;
+  }
+  div.landing h1 {
+    padding-bottom: 0px;
+  }
+  div.scrollDown{margin-top: 60px;}
+
+}
+
+/* ::::::::::::::: 
+Question: 
+how do I make the blue background extend to the bottom of the page on the screen for max-width: 480px? There's a white gab between the background for div.landing and the bottom of the screen and it's annoying me.
+:::::::::::::::*/ 
+
+
+@media (max-width: 480px) {
+  img.birds {padding: 60px 0 0 0;}
+  h1 { font-size: 4.1rem; line-height: 1.2;}
+  div.landing h1 {padding-bottom: 0px;}
+  div.scrollDown {display:none;}
+  img.arrow {display:none;}
+}
+
+@media (max-width: 320px) {
+  div.finally {margin: 0 5%; line-height: 1.4}
+  img.birds {padding-top: 40px;}
+}
 
 
    	/* ---------->>> ADDRESS BOOK <<<-----------*/
@@ -205,9 +247,6 @@ ul.mobile li ul {
    		margin: 50px auto;
    	}
 
-    @media (min-width: 1280px) {
-      div.addressBook {max-width: 1280px;}
-    }
 
    	.line {
    		width: 8%;
@@ -216,13 +255,14 @@ ul.mobile li ul {
    	}
 
 
-.row1, .row2, .row3, .row4, .row5, .row6{
+.row {
 		width: 100%;
 		text-align: center;
-	}
+    }
 
    	input {
    		margin: 1%;
+      padding: 5px;
    	}
 
 	.row1 input {
@@ -245,9 +285,10 @@ ul.mobile li ul {
 		width: 15%;
 	}
 
-	.email {
+	.row4 input{
 		width: 40%;
 		text-align: left;
+    display: block;
 	}
 
 
@@ -275,6 +316,29 @@ ul.mobile li ul {
 		border-radius: 5px;
 	}
 
+/*Media Queries */
+
+@media (min-width: 1280px) {
+      div.addressBook {max-width: 1280px;}
+    }
+
+    @media (max-width: 940px) {
+      .row input {display:block; width:100%; margin: 20px auto;}
+      .drop {display:block;}
+      .row3 input {display:block; margin: 20px 0;}
+      .row5 {display:inline;}
+      .row {text-align: left;}
+      .row6 {width: 40%; margin: 60px auto;}
+  
+    }
+
+    /* ::::::::::::::: 
+Question: 
+How do I get the radio button labels to sit inline with their buttons? Tried display inline for .row5 (even with !important) and I'm getting nothing. 
+:::::::::::::::*/ 
+
+
+
    	/* ---------->>> GIFTS <<<-----------*/
 
 div.gifts {
@@ -296,12 +360,8 @@ margin: auto;
 text-align: center;
 font-weight: 300;
 line-height: 1.8;
-padding:50px 0 180px 0;
+padding:50px 0 80px 0;
 }
-
-@media (min-width: 1280px) {
-      div.gifts p {max-width: 1010px;}
-    }
 
 
 div.gifts h2 {
@@ -310,10 +370,11 @@ div.gifts h2 {
 
 
 .heart {
-  width: 5%;
+width: 5%;
 margin: auto;
 display: block;
-padding: bottom;
+padding-bottom: 60px;
+
 }
 
 

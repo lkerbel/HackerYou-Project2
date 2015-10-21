@@ -26,7 +26,7 @@
 	    	<li> menu
 	    			<ul>
 		    			<li><a title="wedding" href="#">WEDDING</a></li>
-						<li><a title="address book" href="#">ADDRESS BOOK</a></li>
+						<li><a title="address book" href=".addressBook">ADDRESS BOOK</a></li>
 						<li><a title="gifts" href="#">GIFTS</a></li>
 						<li><a title="events" href="#">EVENTS</a></li>
 				</ul>
@@ -61,7 +61,7 @@
 		<form action="guestlist.php" class="guestlist clearfix">
 
 	
-			<div class="row1 clearfix">
+			<div class="row row1 clearfix">
 				<select name="salutation" class="drop">
 					<option value="mrs">Mrs.</option>
 					<option value="mr">Mr.</option>
@@ -76,23 +76,23 @@
 				<input type="text" name="lastName" placeholder="Last Name">
 			</div><!--row1-->
 
-			<div class="row2 clearix">
+			<div class="row row2 clearix">
 				<input type="text" name="address1" placeholder="Address">
 				<input type="text" name="address2" placeholder="Address">
 			</div><!--row2-->
 
-			<div class="row3 clearfix">
+			<div class="row row3 clearfix">
 				<input type="text" class="guestList" name="city" placeholder="City">
 				<input type="text" class="guestList" name="province" placeholder="Province / State">
-				<input type="text" class="guestList" name="postCode" placeholder="Post Code">
+				<input type="text" class="post" name="postCode" placeholder="Post Code">
 			</div><!--row3-->
 
-			<div class="email clearfix">
+			<div class="row row4 clearfix">
 				<input type="email" name="emailAddress" placeholder="Email Address">
 			</div><!--row4-->
 
 
-			<div class="row5 clearfix">
+			<div class="row row5 clearfix">
 
 				<input type="radio" name="rsvp" value="Date saved!" checked="true">
 				<label for="rsvp">Date saved!</label>
@@ -101,7 +101,7 @@
 				<input type="radio" name="rsvp" value="I'm Prince Humperdink"><label for="rsvp">I'm Prince Humperdink</label>
 			</div><!--row5-->
 
-			<div class="row6">
+			<div class="row row6">
 				<input type="submit" value="invite me">
 			</div><!--row6-->
 
