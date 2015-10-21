@@ -373,8 +373,21 @@ div.gifts h2 {
 width: 5%;
 margin: auto;
 display: block;
-padding-bottom: 60px;
+padding-bottom: 20px;
 
+}
+
+.heartLine {
+  width: 3%;
+  border-bottom: 1px solid #c1c1c1;
+  margin: 0 auto 20px auto;
+
+}
+
+.top {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 0 0 50px 0;
 }
 
 

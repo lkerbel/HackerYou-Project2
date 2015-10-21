@@ -16,18 +16,18 @@
 
     <header>
     	<ul class="nav">
-    		<li><a title="wedding" href="#">WEDDING</a></li>
-			<li><a title="address book" href="#">ADDRESS BOOK</a></li>
-			<li><a title="gifts" href="#">GIFTS</a></li>
+    		<li><a title="wedding" href="#landingPage">WEDDING</a></li>
+			<li><a title="address book" href="#address">ADDRESS BOOK</a></li>
+			<li><a title="gifts" href="#noGifts">GIFTS</a></li>
 			<li><a title="events" href="#">EVENTS</a></li>
     	</ul>
 
     	<ul class="mobile">
 	    	<li> menu
 	    			<ul>
-		    			<li><a title="wedding" href="#">WEDDING</a></li>
-						<li><a title="address book" href=".addressBook">ADDRESS BOOK</a></li>
-						<li><a title="gifts" href="#">GIFTS</a></li>
+		    			<li><a title="wedding" href="#landingPage">WEDDING</a></li>
+						<li><a title="address book" href="#address">ADDRESS BOOK</a></li>
+						<li><a title="gifts" href="#noGifts">GIFTS</a></li>
 						<li><a title="events" href="#">EVENTS</a></li>
 				</ul>
 			</li>
@@ -36,7 +36,7 @@
 		
 
     </header>
-
+<div id="landingPage"
 	<div class="landing">
 		<img class="birds" src="images/lovebirds.svg">
 	
@@ -48,11 +48,11 @@
 		
 		<img class="arrow" src="images/arrow.svg" alt="scroll down">
 	</div><!--landing-->
-
-
+</div>
 
 <!-- ///// ADDRESS BOOK /////-->
 
+<div id="address">
 	<div class="addressBook">
 		<h2>address book</h2>
 		<div class="line"> </div>
@@ -105,26 +105,49 @@
 				<input type="submit" value="invite me">
 			</div><!--row6-->
 
-	</div><!--addressBook-->
+	
 
 </form>
+</div><!--addressBook-->
+</div><!--address for nav-->
 <!-- ///// GIFTS /////-->
-
+<div id="noGifts">
 	<div class="gifts">
 		<h2>gifts</h2>
 		<div class="line"></div>
 
 		<p>In place of gifts, Buttercup & Westley have asked guests to consider making a donation to their favourite cause: <a href="http://www.buzzfeed.com/nathanwpyle/as-yoooouuuuuu-wiiiiiisssssshhhh#.vi4J7xx0om">the Fireswamp Conservation Project</a></p>
 
-		<img class="heart" src="images/heart.svg" alt="heart">
-	</div>
+		<a title="landing" href="#landingPage"><img class="heart" src="images/heart.svg" alt="heart"></a>
 
+		<div class="heartLine"></div>
+
+		<div class="top">
+		<a title="landing" href="#landingPage">from the top</a>
+		</div><!--top-->
+	
+	</div><!--gifts-->
+</div><!--noGifts for nav-->
 
 <!-- ///// FOOTER /////-->
 	<footer>
 		
 	</footer>
 	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.smooth-scroll.js"></script>
+
+<script>
+	$(function() {
+
+		$('ul.nav a').smoothScroll({
+			speed:1500
+				});
+		$('.gifts a').smoothScroll({
+					speed:1500
+				});
+	});	
+</script>
 
     </body>
     </html>
